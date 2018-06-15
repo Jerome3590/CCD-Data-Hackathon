@@ -1,0 +1,273 @@
+*------------------------------------------------------------*
+User:                Jerome Dixon
+Date:                June 14, 2018
+Time:                14:28:26
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+          Measurement    Frequency
+ Role        Level         Count
+ 
+INPUT      INTERVAL         105
+INPUT      NOMINAL           16
+TARGET     INTERVAL           1
+ 
+ 
+ 
+Class Variable Summary Statistics
+(maximum 500 observations printed)
+ 
+Data Role=TRAIN
+ 
+                                                Number
+Data                                              of                                                     Mode                                 Mode2
+Role     Variable Name                 Role     Levels    Missing    Mode                             Percentage    Mode2                   Percentage
+ 
+TRAIN    CODE_GENDER                   INPUT       3            0    F                                  65.83       M                         34.16
+TRAIN    EMERGENCYSTATE_MODE           INPUT       3       145755    No                                 51.84                                 47.40
+TRAIN    FLAG_OWN_CAR                  INPUT       2            0    N                                  65.99       Y                         34.01
+TRAIN    FLAG_OWN_REALTY               INPUT       2            0    Y                                  69.37       N                         30.63
+TRAIN    FONDKAPREMONT_MODE            INPUT       5       210295                                       68.39       reg oper account          24.01
+TRAIN    HOUSETYPE_MODE                INPUT       4       154297                                       50.18       block of flats            48.94
+TRAIN    NAME_CONTRACT_TYPE            INPUT       2            0    Cash loans                         90.48       Revolving loans            9.52
+TRAIN    NAME_EDUCATION_TYPE           INPUT       5            0    Secondary / secondary special      71.02       Higher education          24.34
+TRAIN    NAME_FAMILY_STATUS            INPUT       6            0    Married                            63.88       Single / not married      14.78
+TRAIN    NAME_HOUSING_TYPE             INPUT       6            0    House / apartment                  88.73       With parents               4.83
+TRAIN    NAME_INCOME_TYPE              INPUT       8            0    Working                            51.63       Commercial associate      23.29
+TRAIN    NAME_TYPE_SUITE               INPUT       8         1292    Unaccompanied                      80.82       Family                    13.06
+TRAIN    OCCUPATION_TYPE               INPUT      19        96391                                       31.35       Laborers                  17.95
+TRAIN    ORGANIZATION_TYPE             INPUT      58            0    Business Entity Type 3             22.11       XNA                       18.01
+TRAIN    WALLSMATERIAL_MODE            INPUT       8       156341                                       50.84       Panel                     21.48
+TRAIN    WEEKDAY_APPR_PROCESS_START    INPUT       7            0    TUESDAY                            17.53       WEDNESDAY                 16.89
+ 
+ 
+ 
+Interval Variable Summary Statistics
+(maximum 500 observations printed)
+ 
+Data Role=TRAIN
+ 
+                                                      Standard          Non
+Variable                         Role         Mean    Deviation     Missing     Missing     Minimum      Median     Maximum    Skewness    Kurtosis
+ 
+AMT_ANNUITY                     INPUT     27108.57    14493.74       307499          12      1615.5       24903    258025.5    1.579777     7.70732
+AMT_CREDIT                      INPUT       599026    402490.8       307511           0       45000      513531     4050000    1.234778    1.934041
+AMT_GOODS_PRICE                 INPUT     538396.2    369446.5       307233         278       40500      450000     4050000       1.349    2.431916
+AMT_INCOME_TOTAL                INPUT     168797.9    237123.1       307511           0       25650      147150      1.17E8    391.5597    191786.6
+AMT_REQ_CREDIT_BUREAU_DAY       INPUT        0.007    0.110757       265992       41519           0           0           9     27.0435    1151.868
+AMT_REQ_CREDIT_BUREAU_HOUR      INPUT     0.006402    0.083849       265992       41519           0           0           4    14.53406    254.2436
+AMT_REQ_CREDIT_BUREAU_MON       INPUT     0.267395    0.916002       265992       41519           0           0          27    7.804848    90.43486
+AMT_REQ_CREDIT_BUREAU_QRT       INPUT     0.265474    0.794056       265992       41519           0           0         261    134.3658    43707.46
+AMT_REQ_CREDIT_BUREAU_WEEK      INPUT     0.034362    0.204685       265992       41519           0           0           8    9.293573    166.7522
+AMT_REQ_CREDIT_BUREAU_YEAR      INPUT     1.899974    1.869295       265992       41519           0           1          25     1.24359    1.969034
+APARTMENTS_AVG                  INPUT      0.11744     0.10824       151450      156061           0      0.0876           1    2.641836    11.39377
+APARTMENTS_MEDI                 INPUT      0.11785    0.109076       151450      156061           0      0.0864           1    2.639256    11.24219
+APARTMENTS_MODE                 INPUT     0.114231    0.107936       151450      156061           0       0.084           1    2.703052    11.74606
+BASEMENTAREA_AVG                INPUT     0.088442    0.082438       127568      179943           0      0.0763           1    3.566306    25.93012
+BASEMENTAREA_MEDI               INPUT     0.087955    0.082179       127568      179943           0      0.0758           1     3.55304    25.82976
+BASEMENTAREA_MODE               INPUT     0.087543    0.084307       127568      179943           0      0.0746           1    3.481533    24.43119
+CNT_CHILDREN                    INPUT     0.417052    0.722121       307511           0           0           0          19    1.974604    7.904106
+CNT_FAM_MEMBERS                 INPUT     2.152665    0.910682       307509           2           1           2          20    0.987543    2.801977
+COMMONAREA_AVG                  INPUT     0.044621    0.076036        92646      214865           0      0.0211           1    5.457305    45.98802
+COMMONAREA_MEDI                 INPUT     0.044595    0.076144        92646      214865           0      0.0208           1    5.419238    45.26359
+COMMONAREA_MODE                 INPUT     0.042553    0.074445        92646      214865           0       0.019           1    5.620589    48.86099
+DAYS_BIRTH                      INPUT       -16037    4363.989       307511           0      -25229      -15750       -7489    -0.11567    -1.04913
+DAYS_EMPLOYED                   INPUT     63815.05    141275.8       307511           0      -17912       -1213      365243    1.664346    0.771612
+DAYS_ID_PUBLISH                 INPUT      -2994.2     1509.45       307511           0       -7197       -3254           0    0.349327    -1.10681
+DAYS_LAST_PHONE_CHANGE          INPUT     -962.859    826.8085       307510           1       -4292        -757           0    -0.71361    -0.30858
+DAYS_REGISTRATION               INPUT     -4986.12    3522.886       307511           0      -24672       -4504           0    -0.59087    -0.32135
+DEF_30_CNT_SOCIAL_CIRCLE        INPUT     0.143421    0.446698       306490        1021           0           0          34    5.183518    126.3124
+DEF_60_CNT_SOCIAL_CIRCLE        INPUT     0.100049    0.362291       306490        1021           0           0          24    5.277878    86.56286
+ELEVATORS_AVG                   INPUT     0.078942    0.134576       143620      163891           0           0           1    2.439429     7.86939
+ELEVATORS_MEDI                  INPUT     0.078078    0.134467       143620      163891           0           0           1    2.457824    7.963978
+ELEVATORS_MODE                  INPUT      0.07449    0.132256       143620      163891           0           0           1    2.552281    8.597943
+ENTRANCES_AVG                   INPUT     0.149725    0.100049       152683      154828           0      0.1379           1    2.399717    11.59321
+ENTRANCES_MEDI                  INPUT     0.149213    0.100368       152683      154828           0      0.1379           1    2.387711    11.47407
+ENTRANCES_MODE                  INPUT     0.145193    0.100977       152683      154828           0      0.1379           1    2.392343    11.42246
+EXT_SOURCE_1                    INPUT      0.50213    0.211062       134133      173378    0.014568    0.505994    0.962693    -0.06876    -0.96516
+EXT_SOURCE_2                    INPUT     0.514393     0.19106       306851         660    8.174E-8    0.565961       0.855    -0.79358    -0.26913
+EXT_SOURCE_3                    INPUT     0.510853    0.194844       246546       60965    0.000527    0.535276     0.89601    -0.40939    -0.66346
+FLAG_CONT_MOBILE                INPUT     0.998133    0.043164       307511           0           0           1           1    -23.0812     530.744
+FLAG_DOCUMENT_11                INPUT     0.003912    0.062424       307511           0           0           0           1    15.89423    250.6281
+FLAG_DOCUMENT_13                INPUT     0.003525    0.059268       307511           0           0           0           1    16.75375    278.6898
+FLAG_DOCUMENT_15                INPUT      0.00121     0.03476       307511           0           0           0           1    28.69933    821.6571
+FLAG_DOCUMENT_16                INPUT     0.009928    0.099144       307511           0           0           0           1    9.886111    95.73581
+FLAG_DOCUMENT_18                INPUT      0.00813    0.089798       307511           0           0           0           1    10.95508    118.0145
+FLAG_DOCUMENT_19                INPUT     0.000595    0.024387       307511           0           0           0           1    40.95613    1675.416
+FLAG_DOCUMENT_20                INPUT     0.000507    0.022518       307511           0           0           0           1     44.3649    1966.257
+FLAG_DOCUMENT_21                INPUT     0.000335    0.018299       307511           0           0           0           1    54.61294    2980.593
+FLAG_DOCUMENT_3                 INPUT     0.710023    0.453752       307511           0           0           1           1    -0.92572    -1.14304
+FLAG_DOCUMENT_5                 INPUT     0.015115     0.12201       307511           0           0           0           1    7.948322    61.17621
+FLAG_DOCUMENT_6                 INPUT     0.088055    0.283376       307511           0           0           0           1    2.907427    6.453171
+FLAG_DOCUMENT_8                 INPUT     0.081376    0.273412       307511           0           0           0           1    3.062241    7.377367
+FLAG_DOCUMENT_9                 INPUT     0.003896    0.062295       307511           0           0           0           1    15.92775     251.695
+FLAG_EMAIL                      INPUT      0.05672    0.231307       307511           0           0           0           1    3.832853    12.69085
+FLAG_EMP_PHONE                  INPUT     0.819889     0.38428       307511           0           0           1           1    -1.66489    0.771852
+FLAG_PHONE                      INPUT     0.281066    0.449521       307511           0           0           0           1    0.974083    -1.05117
+FLAG_WORK_PHONE                 INPUT     0.199368    0.399526       307511           0           0           0           1     1.50495    0.264876
+FLOORSMAX_AVG                   INPUT     0.226282    0.144641       154491      153020           0      0.1667           1    1.226454    2.432545
+FLOORSMAX_MEDI                  INPUT     0.225897    0.145067       154491      153020           0      0.1667           1    1.240185    2.468555
+FLOORSMAX_MODE                  INPUT     0.222315    0.143709       154491      153020           0      0.1667           1    1.244343    2.535687
+FLOORSMIN_AVG                   INPUT     0.231894     0.16138        98869      208642           0      0.2083           1    0.954197    1.338256
+FLOORSMIN_MEDI                  INPUT     0.231625    0.161934        98869      208642           0      0.2083           1    0.960226    1.346574
+FLOORSMIN_MODE                  INPUT     0.228058     0.16116        98869      208642           0      0.2083           1    0.963835    1.353726
+HOUR_APPR_PROCESS_START         INPUT     12.06342    3.265832       307511           0           0          12          23    -0.02802    -0.19417
+LANDAREA_AVG                    INPUT     0.066333    0.081184       124921      182590           0      0.0481           1    4.458677    34.74479
+LANDAREA_MEDI                   INPUT     0.067169    0.082167       124921      182590           0      0.0487           1    4.368292    33.23798
+LANDAREA_MODE                   INPUT     0.064958     0.08175       124921      182590           0      0.0458           1    4.377027    33.27327
+LIVE_CITY_NOT_WORK_CITY         INPUT     0.179555    0.383817       307511           0           0           0           1    1.669795     0.78822
+LIVE_REGION_NOT_WORK_REGION     INPUT     0.040659    0.197499       307511           0           0           0           1     4.65162     19.6377
+LIVINGAPARTMENTS_AVG            INPUT     0.100775    0.092576        97312      210199           0      0.0756           1    3.042198    16.49063
+LIVINGAPARTMENTS_MEDI           INPUT     0.101954    0.093642        97312      210199           0      0.0761           1    2.988291    15.69705
+LIVINGAPARTMENTS_MODE           INPUT     0.105645     0.09788        97312      210199           0      0.0771           1    2.902672    14.22499
+LIVINGAREA_AVG                  INPUT     0.107399    0.110565       153161      154350           0      0.0745           1    2.854736    12.33117
+LIVINGAREA_MEDI                 INPUT     0.108607     0.11226       153161      154350           0      0.0749           1    2.848935    12.13856
+LIVINGAREA_MODE                 INPUT     0.105975    0.111845       153161      154350           0      0.0731           1    2.902491    12.45906
+NONLIVINGAPARTMENTS_AVG         INPUT     0.008809    0.047732        93997      213514           0           0           1    15.54119    284.7303
+NONLIVINGAPARTMENTS_MEDI        INPUT     0.008651    0.047415        93997      213514           0           0           1      15.672    289.4925
+NONLIVINGAPARTMENTS_MODE        INPUT     0.008076    0.046276        93997      213514           0           0           1    16.25182    309.7269
+NONLIVINGAREA_AVG               INPUT     0.028358    0.069523       137829      169682           0      0.0036           1    6.559012    64.91242
+NONLIVINGAREA_MEDI              INPUT     0.028236    0.070166       137829      169682           0      0.0031           1    6.508831    63.65404
+NONLIVINGAREA_MODE              INPUT     0.027022    0.070254       137829      169682           0      0.0011           1    6.522451    63.35707
+OBS_30_CNT_SOCIAL_CIRCLE        INPUT     1.422245    2.400989       306490        1021           0           0         348     12.1396    1424.816
+OBS_60_CNT_SOCIAL_CIRCLE        INPUT     1.405292    2.379803       306490        1021           0           0         344    12.07083    1409.705
+OWN_CAR_AGE                     INPUT     12.06109    11.94481       104582      202929           0           9          91    2.745422    9.214945
+REGION_POPULATION_RELATIVE      INPUT     0.020868    0.013831       307511           0     0.00029     0.01885    0.072508    1.488009    3.260065
+REGION_RATING_CLIENT            INPUT     2.052463    0.509034       307511           0           1           2           3    0.087468    0.800416
+REGION_RATING_CLIENT_W_CITY     INPUT     2.031521    0.502737       307511           0           1           2           3     0.05973    0.933584
+REG_CITY_NOT_LIVE_CITY          INPUT     0.078173    0.268444       307511           0           0           0           1    3.142781    7.877121
+REG_CITY_NOT_WORK_CITY          INPUT     0.230454    0.421124       307511           0           0           0           1    1.280138    -0.36125
+REG_REGION_NOT_LIVE_REGION      INPUT     0.015144    0.122126       307511           0           0           0           1    7.940276    61.04838
+REG_REGION_NOT_WORK_REGION      INPUT     0.050769    0.219526       307511           0           0           0           1    4.092767    14.75084
+SK_ID_CURR                      INPUT     278180.5    102790.2       307511           0      100002      278202      456255     -0.0012    -1.19899
+TOTALAREA_MODE                  INPUT     0.102547    0.107462       159080      148431           0      0.0688           1    2.797572    12.16753
+YEARS_BEGINEXPLUATATION_AVG     INPUT     0.977735    0.059223       157504      150007           0      0.9816           1    -15.5153    248.1763
+YEARS_BEGINEXPLUATATION_MEDI    INPUT     0.977752    0.059897       157504      150007           0      0.9816           1    -15.5731    248.3965
+YEARS_BEGINEXPLUATATION_MODE    INPUT     0.977065    0.064575       157504      150007           0      0.9816           1    -14.7553    219.9628
+YEARS_BUILD_AVG                 INPUT     0.752471     0.11328       103023      204488           0      0.7552           1    -0.96249    4.399757
+YEARS_BUILD_MEDI                INPUT     0.755746    0.112066       103023      204488           0      0.7585           1    -0.96278    4.468811
+YEARS_BUILD_MODE                INPUT     0.759637    0.110111       103023      204488           0      0.7648           1     -1.0023    4.764474
+TARGET                          TARGET    0.080729    0.272419       307511           0           0           0           1    3.078159    7.475109
+ 
+ 
+ 
+Correlation Statistics
+(maximum 500 observations printed)
+ 
+Data Role=TRAIN Type=PEARSON Target=TARGET
+ 
+Input                           Correlation
+ 
+DAYS_BIRTH                         0.07824
+REGION_RATING_CLIENT_W_CITY        0.06089
+REGION_RATING_CLIENT               0.05890
+DAYS_LAST_PHONE_CHANGE             0.05522
+DAYS_ID_PUBLISH                    0.05146
+REG_CITY_NOT_WORK_CITY             0.05099
+FLAG_EMP_PHONE                     0.04598
+REG_CITY_NOT_LIVE_CITY             0.04440
+FLAG_DOCUMENT_3                    0.04435
+DAYS_REGISTRATION                  0.04197
+OWN_CAR_AGE                        0.03761
+LIVE_CITY_NOT_WORK_CITY            0.03252
+DEF_30_CNT_SOCIAL_CIRCLE           0.03225
+DEF_60_CNT_SOCIAL_CIRCLE           0.03128
+FLAG_WORK_PHONE                    0.02852
+AMT_REQ_CREDIT_BUREAU_YEAR         0.01993
+CNT_CHILDREN                       0.01919
+CNT_FAM_MEMBERS                    0.00931
+OBS_30_CNT_SOCIAL_CIRCLE           0.00913
+OBS_60_CNT_SOCIAL_CIRCLE           0.00902
+REG_REGION_NOT_WORK_REGION         0.00694
+REG_REGION_NOT_LIVE_REGION         0.00558
+FLAG_DOCUMENT_21                   0.00371
+LIVE_REGION_NOT_WORK_REGION        0.00282
+AMT_REQ_CREDIT_BUREAU_DAY          0.00270
+AMT_REQ_CREDIT_BUREAU_HOUR         0.00093
+AMT_REQ_CREDIT_BUREAU_WEEK         0.00079
+FLAG_CONT_MOBILE                   0.00037
+FLAG_DOCUMENT_20                   0.00022
+FLAG_DOCUMENT_5                   -0.00032
+FLAG_DOCUMENT_19                  -0.00136
+NONLIVINGAPARTMENTS_MODE          -0.00156
+FLAG_EMAIL                        -0.00176
+AMT_REQ_CREDIT_BUREAU_QRT         -0.00202
+SK_ID_CURR                        -0.00211
+NONLIVINGAPARTMENTS_MEDI          -0.00276
+NONLIVINGAPARTMENTS_AVG           -0.00318
+AMT_INCOME_TOTAL                  -0.00398
+FLAG_DOCUMENT_11                  -0.00423
+FLAG_DOCUMENT_9                   -0.00435
+FLAG_DOCUMENT_15                  -0.00654
+FLAG_DOCUMENT_18                  -0.00795
+FLAG_DOCUMENT_8                   -0.00804
+YEARS_BEGINEXPLUATATION_MODE      -0.00904
+YEARS_BEGINEXPLUATATION_AVG       -0.00973
+YEARS_BEGINEXPLUATATION_MEDI      -0.00999
+LANDAREA_MODE                     -0.01017
+LANDAREA_AVG                      -0.01088
+LANDAREA_MEDI                     -0.01126
+FLAG_DOCUMENT_13                  -0.01158
+FLAG_DOCUMENT_16                  -0.01161
+AMT_REQ_CREDIT_BUREAU_MON         -0.01246
+NONLIVINGAREA_MODE                -0.01271
+AMT_ANNUITY                       -0.01282
+NONLIVINGAREA_MEDI                -0.01334
+NONLIVINGAREA_AVG                 -0.01358
+COMMONAREA_MODE                   -0.01634
+ENTRANCES_MODE                    -0.01739
+COMMONAREA_AVG                    -0.01855
+COMMONAREA_MEDI                   -0.01857
+ENTRANCES_MEDI                    -0.01902
+ENTRANCES_AVG                     -0.01917
+BASEMENTAREA_MODE                 -0.01995
+YEARS_BUILD_MODE                  -0.02207
+BASEMENTAREA_MEDI                 -0.02208
+YEARS_BUILD_AVG                   -0.02215
+YEARS_BUILD_MEDI                  -0.02233
+BASEMENTAREA_AVG                  -0.02275
+LIVINGAPARTMENTS_MODE             -0.02339
+FLAG_PHONE                        -0.02381
+HOUR_APPR_PROCESS_START           -0.02417
+LIVINGAPARTMENTS_MEDI             -0.02462
+LIVINGAPARTMENTS_AVG              -0.02503
+APARTMENTS_MODE                   -0.02728
+FLAG_DOCUMENT_6                   -0.02860
+APARTMENTS_MEDI                   -0.02918
+APARTMENTS_AVG                    -0.02950
+AMT_CREDIT                        -0.03037
+LIVINGAREA_MODE                   -0.03068
+ELEVATORS_MODE                    -0.03213
+TOTALAREA_MODE                    -0.03260
+FLOORSMIN_MODE                    -0.03270
+LIVINGAREA_MEDI                   -0.03274
+LIVINGAREA_AVG                    -0.03300
+FLOORSMIN_MEDI                    -0.03339
+FLOORSMIN_AVG                     -0.03361
+ELEVATORS_MEDI                    -0.03386
+ELEVATORS_AVG                     -0.03420
+REGION_POPULATION_RELATIVE        -0.03723
+AMT_GOODS_PRICE                   -0.03965
+FLOORSMAX_MODE                    -0.04323
+FLOORSMAX_MEDI                    -0.04377
+FLOORSMAX_AVG                     -0.04400
+DAYS_EMPLOYED                     -0.04493
+EXT_SOURCE_1                      -0.15532
+EXT_SOURCE_2                      -0.16047
+EXT_SOURCE_3                      -0.17892
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*

@@ -1,0 +1,142 @@
+---
+title: "Bank Loan"
+author: "Jerome Dixon"
+output:
+  html_document:
+    toc: yes
+  includes:
+    before_body: before_body.tex
+    number_sections: yes
+    toc: yes
+  word_document:
+    toc: yes
+  pdf_document:
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(dplyr)
+library(tidyverse)
+library(readr)
+
+```
+
+
+## Background and Concept of Operations
+![](Background.jpg)
+
+## Files
+![](dataFiles.jpg)
+
+
+Load files from Kaggle 
+```{r}
+
+bureau <- read_csv("bureau.csv")
+
+```
+
+```{r}
+
+prev_app <- read_csv("previous_application.csv")
+
+```
+
+```{r}
+
+bureau_balance <- read_csv("bureau_balance.csv")
+
+```
+
+```{r}
+
+POS_CASH_balance <- read_csv("POS_CASH_balance.csv")
+
+```
+
+```{r}
+
+credit_card_balance <- read_csv("credit_card_balance.csv")
+
+```
+
+
+```{r}
+
+application_train <- read_csv("application_train.csv")
+
+```
+
+
+
+
+```{r}
+
+Tetrad_input <-  select(application_train, TARGET, EXT_SOURCE_1, EXT_SOURCE_2, EXT_SOURCE_3, OCCUPATION_TYPE, ORGANIZATION_TYPE, DAYS_BIRTH) %>% drop_na()
+
+Tetrad_input1 <-  select(application_train, TARGET, EXT_SOURCE_1, EXT_SOURCE_2, EXT_SOURCE_3, OCCUPATION_TYPE, ORGANIZATION_TYPE, DAYS_BIRTH)
+
+write.csv(Tetrad_input,"Tetrad_Input.csv")
+
+write.csv(Tetrad_input1,"Tetrad_Input1.csv")
+
+```
+
+## SAS Enterprise Miner Analysis
+![](SAS EM_Bank Risk.jpg)
+
+
+Predictive Model Iteration #1
+![](chart.jpg)
+
+
+## Tetrad Analysis
+![](Model_Search.jpg)
+![](Final Causal Model.jpg)
+## How Good Is Our Data??
+```{r}
+
+Stat_Explorer_Class <- read_csv("Stat_Explorer_Class.csv")
+head(Stat_Explorer_Class, 5)
+
+```
+
+```{r}
+
+Stat_Explorer_Interval <- read_csv("Stat_Explorer_Interval.csv")
+head(Stat_Explorer_Interval)
+
+```
+
+A few of our key causal variables have large amounts of missing variables (EXT_SOURCE1, EXT_SOURCE3, and OCCUPATION_TYPE)
+
+We use Tetrad to determine causal factors with missing variables and then formulate impute formulate to populate predicition based on case where key causal variables are missing
+
+![](Path2.jpg)
+
+![](Path3.jpg)
+
+![](Path4.jpg)
+![](Path5.jpg)
+
+![](Impute_Method1.jpg)
+
+
+![](Impute_Method2.jpg)
+
+
+```{r}
+# Placeholder script for listing all Missing Variable 'case_when' impute methods
+#final_Model_data <- Tetrad_Input2 %>% 
+#   mutate(TARGET = case_when(EXT_SOURCE == 0 & Depot_DLA$`UFO QTY` <= 1 ~ "Yellow",
+#                              Depot_DLA$`UFO QTY` >= 1 ~ "Red", 
+#                              Depot_DLA$`UFO QTY` >= 1 ~ "Red",
+#                              Depot_DLA$`UFO QTY` >= 1 ~ "Red",
+#                             TRUE ~ '0')) 
+```
+
+
