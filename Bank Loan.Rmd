@@ -18,7 +18,7 @@ date: "`r Sys.Date()`"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r}
+```{r Libraries, warning=FALSE, message=FALSE}
 library(dplyr)
 library(tidyverse)
 library(readr)
@@ -33,39 +33,20 @@ library(readr)
 ![](dataFiles.jpg)
 
 
-Load files from Kaggle 
-```{r}
+Load Kaggle files 
+```{r Load Data, warning=FALSE, message=FALSE}
 
 bureau <- read_csv("bureau.csv")
 
-```
-
-```{r}
-
 prev_app <- read_csv("previous_application.csv")
-
-```
-
-```{r}
 
 bureau_balance <- read_csv("bureau_balance.csv")
 
-```
-
-```{r}
 
 POS_CASH_balance <- read_csv("POS_CASH_balance.csv")
 
-```
-
-```{r}
 
 credit_card_balance <- read_csv("credit_card_balance.csv")
-
-```
-
-
-```{r}
 
 application_train <- read_csv("application_train.csv")
 
@@ -74,7 +55,7 @@ application_train <- read_csv("application_train.csv")
 
 
 
-```{r}
+```{r Format for Tetrad, warning=FALSE, message=FALSE}
 
 Tetrad_input <-  select(application_train, TARGET, EXT_SOURCE_1, EXT_SOURCE_2, EXT_SOURCE_3, OCCUPATION_TYPE, ORGANIZATION_TYPE, DAYS_BIRTH) %>% drop_na()
 
@@ -98,14 +79,11 @@ Predictive Model Iteration #1
 ![](Model_Search.jpg)
 ![](Final Causal Model.jpg)
 ## How Good Is Our Data??
-```{r}
+```{r Stat Explore, warning=FALSE, message=FALSE}
 
 Stat_Explorer_Class <- read_csv("Stat_Explorer_Class.csv")
 head(Stat_Explorer_Class, 5)
 
-```
-
-```{r}
 
 Stat_Explorer_Interval <- read_csv("Stat_Explorer_Interval.csv")
 head(Stat_Explorer_Interval)
